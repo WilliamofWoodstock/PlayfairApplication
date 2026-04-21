@@ -2,17 +2,22 @@ namespace PlayfairApplication
 {
     public partial class Form1 : Form
     {
-        public readonly string[] modeOptions = { "English", "German", "Bulgarian Cyrillic", "Tajik Persian"};
+        public readonly string[] modeOptions = { "English", "German", "Bulgarian", "Tajik Persian"};
         public Form1()
         {
+            StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             modeBox.Items.AddRange(modeOptions);
             modeBox.SelectedIndex = 0;
+            Center();
         }
 
-        private void Mode_DrawItem(object sender, DrawItemEventArgs e)
+        private void Center()
         {
-            
+            int formWidth = ClientSize.Width;
+            title.Location = new Point((formWidth - title.Size.Width) / 2, title.Location.Y);
+            modeLabel.Location = new Point((formWidth - modeLabel.Size.Width) / 2, modeLabel.Location.Y);
+            modeBox.Location = new Point((formWidth - modeBox.Size.Width) / 2, modeBox.Location.Y);
         }
     }
 }
