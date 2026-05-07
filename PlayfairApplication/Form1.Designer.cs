@@ -57,6 +57,8 @@
             label5ENG = new Label();
             label4ENG = new Label();
             label3ENG = new Label();
+            scrambleButton = new Button();
+            richTextBox1 = new RichTextBox();
             playfairGrid.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,7 +70,7 @@
             title.Location = new Point(121, 9);
             title.Margin = new Padding(2, 0, 2, 0);
             title.Name = "title";
-            title.Size = new Size(695, 67);
+            title.Size = new Size(591, 57);
             title.TabIndex = 0;
             title.Text = "The Playfair Application";
             // 
@@ -81,7 +83,7 @@
             modeBox.Location = new Point(379, 138);
             modeBox.Margin = new Padding(2);
             modeBox.Name = "modeBox";
-            modeBox.Size = new Size(218, 30);
+            modeBox.Size = new Size(218, 26);
             modeBox.TabIndex = 1;
             // 
             // modeLabel
@@ -92,14 +94,14 @@
             modeLabel.Location = new Point(409, 114);
             modeLabel.Margin = new Padding(2, 0, 2, 0);
             modeLabel.Name = "modeLabel";
-            modeLabel.Size = new Size(152, 22);
+            modeLabel.Size = new Size(127, 18);
             modeLabel.TabIndex = 2;
             modeLabel.Text = "Mode/Language";
             // 
             // label2ENG
             // 
             label2ENG.BorderStyle = BorderStyle.FixedSingle;
-            label2ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2ENG.Location = new Point(100, 0);
             label2ENG.Margin = new Padding(0);
             label2ENG.Name = "label2ENG";
@@ -112,7 +114,7 @@
             // label1ENG
             // 
             label1ENG.BorderStyle = BorderStyle.FixedSingle;
-            label1ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1ENG.Location = new Point(0, 0);
             label1ENG.Margin = new Padding(0);
             label1ENG.Name = "label1ENG";
@@ -159,7 +161,7 @@
             // label25ENG
             // 
             label25ENG.BorderStyle = BorderStyle.FixedSingle;
-            label25ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label25ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label25ENG.Location = new Point(400, 400);
             label25ENG.Margin = new Padding(0);
             label25ENG.Name = "label25ENG";
@@ -172,7 +174,7 @@
             // label24ENG
             // 
             label24ENG.BorderStyle = BorderStyle.FixedSingle;
-            label24ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24ENG.Location = new Point(300, 400);
             label24ENG.Margin = new Padding(0);
             label24ENG.Name = "label24ENG";
@@ -185,7 +187,7 @@
             // label23ENG
             // 
             label23ENG.BorderStyle = BorderStyle.FixedSingle;
-            label23ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label23ENG.Location = new Point(200, 400);
             label23ENG.Margin = new Padding(0);
             label23ENG.Name = "label23ENG";
@@ -198,7 +200,7 @@
             // label22ENG
             // 
             label22ENG.BorderStyle = BorderStyle.FixedSingle;
-            label22ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label22ENG.Location = new Point(100, 400);
             label22ENG.Margin = new Padding(0);
             label22ENG.Name = "label22ENG";
@@ -211,7 +213,7 @@
             // label21ENG
             // 
             label21ENG.BorderStyle = BorderStyle.FixedSingle;
-            label21ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label21ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21ENG.Location = new Point(0, 400);
             label21ENG.Margin = new Padding(0);
             label21ENG.Name = "label21ENG";
@@ -224,7 +226,7 @@
             // label20ENG
             // 
             label20ENG.BorderStyle = BorderStyle.FixedSingle;
-            label20ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label20ENG.Location = new Point(400, 300);
             label20ENG.Margin = new Padding(0);
             label20ENG.Name = "label20ENG";
@@ -237,7 +239,7 @@
             // label19ENG
             // 
             label19ENG.BorderStyle = BorderStyle.FixedSingle;
-            label19ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label19ENG.Location = new Point(300, 300);
             label19ENG.Margin = new Padding(0);
             label19ENG.Name = "label19ENG";
@@ -250,7 +252,7 @@
             // label18ENG
             // 
             label18ENG.BorderStyle = BorderStyle.FixedSingle;
-            label18ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18ENG.Location = new Point(200, 300);
             label18ENG.Margin = new Padding(0);
             label18ENG.Name = "label18ENG";
@@ -263,7 +265,7 @@
             // label17ENG
             // 
             label17ENG.BorderStyle = BorderStyle.FixedSingle;
-            label17ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17ENG.Location = new Point(100, 300);
             label17ENG.Margin = new Padding(0);
             label17ENG.Name = "label17ENG";
@@ -276,7 +278,7 @@
             // label16ENG
             // 
             label16ENG.BorderStyle = BorderStyle.FixedSingle;
-            label16ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label16ENG.Location = new Point(0, 300);
             label16ENG.Margin = new Padding(0);
             label16ENG.Name = "label16ENG";
@@ -289,7 +291,7 @@
             // label13ENG
             // 
             label13ENG.BorderStyle = BorderStyle.FixedSingle;
-            label13ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13ENG.Location = new Point(200, 200);
             label13ENG.Margin = new Padding(0);
             label13ENG.Name = "label13ENG";
@@ -302,7 +304,7 @@
             // label14ENG
             // 
             label14ENG.BorderStyle = BorderStyle.FixedSingle;
-            label14ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14ENG.Location = new Point(300, 200);
             label14ENG.Margin = new Padding(0);
             label14ENG.Name = "label14ENG";
@@ -315,7 +317,7 @@
             // label15ENG
             // 
             label15ENG.BorderStyle = BorderStyle.FixedSingle;
-            label15ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15ENG.Location = new Point(400, 200);
             label15ENG.Margin = new Padding(0);
             label15ENG.Name = "label15ENG";
@@ -328,7 +330,7 @@
             // label12ENG
             // 
             label12ENG.BorderStyle = BorderStyle.FixedSingle;
-            label12ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12ENG.Location = new Point(100, 200);
             label12ENG.Margin = new Padding(0);
             label12ENG.Name = "label12ENG";
@@ -341,7 +343,7 @@
             // label11ENG
             // 
             label11ENG.BorderStyle = BorderStyle.FixedSingle;
-            label11ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11ENG.Location = new Point(0, 200);
             label11ENG.Margin = new Padding(0);
             label11ENG.Name = "label11ENG";
@@ -354,7 +356,7 @@
             // label10ENG
             // 
             label10ENG.BorderStyle = BorderStyle.FixedSingle;
-            label10ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10ENG.Location = new Point(400, 100);
             label10ENG.Margin = new Padding(0);
             label10ENG.Name = "label10ENG";
@@ -367,7 +369,7 @@
             // label9ENG
             // 
             label9ENG.BorderStyle = BorderStyle.FixedSingle;
-            label9ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9ENG.Location = new Point(300, 100);
             label9ENG.Margin = new Padding(0);
             label9ENG.Name = "label9ENG";
@@ -380,7 +382,7 @@
             // label8ENG
             // 
             label8ENG.BorderStyle = BorderStyle.FixedSingle;
-            label8ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8ENG.Location = new Point(200, 100);
             label8ENG.Margin = new Padding(0);
             label8ENG.Name = "label8ENG";
@@ -393,7 +395,7 @@
             // label7ENG
             // 
             label7ENG.BorderStyle = BorderStyle.FixedSingle;
-            label7ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7ENG.Location = new Point(100, 100);
             label7ENG.Margin = new Padding(0);
             label7ENG.Name = "label7ENG";
@@ -406,7 +408,7 @@
             // label6ENG
             // 
             label6ENG.BorderStyle = BorderStyle.FixedSingle;
-            label6ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6ENG.Location = new Point(0, 100);
             label6ENG.Margin = new Padding(0);
             label6ENG.Name = "label6ENG";
@@ -419,7 +421,7 @@
             // label5ENG
             // 
             label5ENG.BorderStyle = BorderStyle.FixedSingle;
-            label5ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5ENG.Location = new Point(400, 0);
             label5ENG.Margin = new Padding(0);
             label5ENG.Name = "label5ENG";
@@ -432,7 +434,7 @@
             // label4ENG
             // 
             label4ENG.BorderStyle = BorderStyle.FixedSingle;
-            label4ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4ENG.Location = new Point(300, 0);
             label4ENG.Margin = new Padding(0);
             label4ENG.Name = "label4ENG";
@@ -445,7 +447,7 @@
             // label3ENG
             // 
             label3ENG.BorderStyle = BorderStyle.FixedSingle;
-            label3ENG.Font = new Font("MS Reference Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3ENG.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3ENG.Location = new Point(200, 0);
             label3ENG.Margin = new Padding(0);
             label3ENG.Name = "label3ENG";
@@ -455,16 +457,37 @@
             label3ENG.Text = "A";
             label3ENG.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // scrambleButton
+            // 
+            scrambleButton.Anchor = AnchorStyles.Top;
+            scrambleButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            scrambleButton.Location = new Point(413, 274);
+            scrambleButton.Name = "scrambleButton";
+            scrambleButton.Size = new Size(123, 46);
+            scrambleButton.TabIndex = 7;
+            scrambleButton.Text = "Scramble!";
+            scrambleButton.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(764, 446);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(171, 222);
+            richTextBox1.TabIndex = 8;
+            richTextBox1.Text = "";
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(978, 1144);
+            ClientSize = new Size(982, 1055);
+            Controls.Add(richTextBox1);
+            Controls.Add(scrambleButton);
             Controls.Add(playfairGrid);
             Controls.Add(modeLabel);
             Controls.Add(modeBox);
             Controls.Add(title);
             Margin = new Padding(2);
-            MinimumSize = new Size(1000, 1200);
+            MinimumSize = new Size(1000, 1018);
             Name = "Form1";
             Text = "Playfair Application";
             playfairGrid.ResumeLayout(false);
@@ -503,5 +526,7 @@
         private Label label22ENG;
         private Label label21ENG;
         private Label label20ENG;
+        private Button scrambleButton;
+        private RichTextBox richTextBox1;
     }
 }
