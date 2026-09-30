@@ -34,5 +34,10 @@ namespace PlayfairApplication
             playfairGrid.Location = new Point((formWidth - playfairGrid.Size.Width) / 2, playfairGrid.Location.Y);
             scrambleButton.Location = new Point((formWidth - scrambleButton.Size.Width) / 2, scrambleButton.Location.Y);
         }
+
+        private string Cipher()
+        {
+            return "";
+        }
     }
 }

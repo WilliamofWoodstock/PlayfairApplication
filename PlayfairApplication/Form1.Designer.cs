@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             title = new Label();
             modeBox = new ComboBox();
             modeLabel = new Label();
@@ -470,24 +471,27 @@
             // 
             // richTextBox1
             // 
+            richTextBox1.Anchor = AnchorStyles.Top;
             richTextBox1.Location = new Point(764, 446);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(171, 222);
+            richTextBox1.Size = new Size(190, 222);
             richTextBox1.TabIndex = 8;
             richTextBox1.Text = "";
             // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(982, 1055);
+            ClientSize = new Size(982, 953);
             Controls.Add(richTextBox1);
             Controls.Add(scrambleButton);
             Controls.Add(playfairGrid);
             Controls.Add(modeLabel);
             Controls.Add(modeBox);
             Controls.Add(title);
+            Font = new Font("Lucida Sans Unicode", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
-            MinimumSize = new Size(1000, 1018);
+            MinimumSize = new Size(1000, 1000);
             Name = "Form1";
             Text = "Playfair Application";
             playfairGrid.ResumeLayout(false);
